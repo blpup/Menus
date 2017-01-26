@@ -1,0 +1,99 @@
+﻿@charset "utf-8";
+/*
+
+Date: 03/12/2015
+Author: Wizard Digital Agency| Front-End Developer: Arthur Jones
+Author URL: http://www.wizard.com.tr
+*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* CSSMap */
+/* 1. Extra Fonts */
+/* 2. General Styles */
+/* 3. Responsive Styles */
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 1. Extra Fonts */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 2. General Styles */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#AJMenuContainer {
+    width:200px;
+    height:100%;
+    display:block;
+    position:fixed;
+    left:0;
+    top:0;
+    background-color:#0D513C;
+    z-index:100;
+}
+#AJMenuContainer.responsive {width:75px;}
+#AJMenuContainer .mainMenuLi {
+    text-align: center;
+    height: 20vh;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    transition:ease 0.3s;
+    position: relative;
+    min-height:90px;
+}
+#AJMenuContainer .mainMenuLi:hover {background-color:#29B448}
+#AJMenuContainer .mainMenuLi .fa {font-size: 50px; padding: 20px 0px;}
+#AJMenuContainer ul li ul {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 0px;
+    height: 100vh;
+    overflow:hidden;
+}
+#AJMenuContainer ul li ul li {
+    padding: 15px 11px;
+    width:125px;
+    box-sizing: border-box;
+    position:relative;
+    background-color: #0D513C;
+}
+#AJMenuContainer .mainMenuLi .SubList .fa {font-size: 15px;
+    padding: 0px;
+    position: relative;
+    left: 12px;
+}
+#AJMenuContainer ul li ul li:hover {background-color:#29B448}
+#AJMenuContainer ul li ul li .innerSubList { left:125px; width:0px}
+.transistion {transition:ease 0.3s;}
+#AJMenuContainer ul li ul.active {overflow:visible;}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 3. Responsive Styles */
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+#AJMenuContainer .mainMenuLi {height: 12vh; padding:0px; font-size:0px; min-height:40px}
+#AJMenuContainer { width:75px;}
+#AJMenuContainer .mainMenuLi .fa {font-size: 25px; line-height: 12vh; padding-top: 0px; }
+#AJMenuContainer ul li ul {left:75px; font-size:14px; }
+#AJMenuContainer ul li ul li {width:110px;}
+#AJMenuContainer ul li ul li .innerSubList {left:110px;}
+#AJMenuContainer .mainMenuLi .SubList .fa {
+    font-size: 15px;
+    padding-top: 0px;
+    position: relative;
+    left: 10px;
+    line-height:0px;
+}
+}
+ @media only screen and (max-width: 499px) {
+}
